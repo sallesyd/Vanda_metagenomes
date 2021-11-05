@@ -1,0 +1,47 @@
+grep -i gene_number prokka_file.gff > file_name.txt
+
+
+grep -F 1.1.5.2 BulkMat.gff > /home/ssalley/VANDA/BULKMAT/gcd_BULKMAT.txt
+grep -F 3.1.3.1 BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phoB_BULKMAT.txt
+grep -F '3.1.3.1;' /home/clgrett/VandaMetagenomes/BulkMat/PROKKA/BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phoB_BULKMAT_grep.txt
+grep -F 2.7.13.3 BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phoR_BULKMAT.txt
+grep -i gene=phoU BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phoU_BULKMAT.txt
+grep -F 3.1.3.2 BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phoN_BULKMAT.txt
+grep -i gene=phoN BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phoN_BULKMAT.txt
+grep -i gene=phoD BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phoD_BULKMAT.txt
+grep -i gene=phoD BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phoD_BULKMAT.txt
+grep -i gene=ugpQ BulkMat.gff > /home/ssalley/VANDA/BULKMAT/ugpQ_BULKMAT.txt
+grep -F 3.1.8.1 BulkMat.gff > /home/ssalley/VANDA/BULKMAT/opd_BULKMAT.txt
+grep -i gene=appA BulkMat.gff > /home/ssalley/VANDA/BULKMAT/appA_BULKMAT.txt
+grep -i gene=phnW BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phnW_BULKMAT.txt
+grep -i gene=phnX BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phnX_BULKMAT.txt
+grep -i gene=phnA BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phnA_BULKMAT.txt
+grep -i gene=ppa BulkMat.gff > /home/ssalley/VANDA/BULKMAT/ppa_BULKMAT.txt
+grep -i gene=ppx BulkMat.gff > /home/ssalley/VANDA/BULKMAT/ppx_BULKMAT.txt
+grep -i gene=phnF BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phnF_BULKMAT.txt
+grep -i gene=phnG BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phnG_BULKMAT.txt
+grep -i gene=phnH BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phnH_BULKMAT.txt
+grep -i gene=phnI BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phnI_BULKMAT.txt
+grep -i gene=phnJ BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phnJ_BULKMAT.txt
+grep -i gene=phnK BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phnK_BULKMAT.txt
+grep -i gene=phnL BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phnL_BULKMAT.txt
+grep -i gene=phnM BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phnM_BULKMAT.txt
+grep -i gene=phnN BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phnN_BULKMAT.txt
+grep -i gene=phnO BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phnO_BULKMAT.txt
+grep -i gene=phnP BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phnP_BULKMAT.txt
+grep -i gene=pit BulkMat.gff > /home/ssalley/VANDA/BULKMAT/pit_BULKMAT.txt
+grep -i gene=pstS BulkMat.gff > /home/ssalley/VANDA/BULKMAT/pstS_BULKMAT.txt
+grep -i gene=pstC BulkMat.gff > /home/ssalley/VANDA/BULKMAT/pstC_BULKMAT.txt
+grep -i gene=pstA BulkMat.gff > /home/ssalley/VANDA/BULKMAT/pstA_BULKMAT.txt
+grep -i gene=pstB BulkMat.gff > /home/ssalley/VANDA/BULKMAT/pstB_BULKMAT.txt
+grep -i gene=phnC BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phnC_BULKMAT.txt
+grep -i gene=phnD BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phnD_BULKMAT.txt
+grep -i gene=phnE BulkMat.gff > /home/ssalley/VANDA/BULKMAT/phnE_BULKMAT.txt
+grep -i gene=ugpB BulkMat.gff > /home/ssalley/VANDA/BULKMAT/ugpB_BULKMAT.txt
+grep -i gene=ugpA BulkMat.gff > /home/ssalley/VANDA/BULKMAT/ugpA_BULKMAT.txt
+grep -i gene=ugpE BulkMat.gff > /home/ssalley/VANDA/BULKMAT/ugpE_BULKMAT.txt
+grep -i gene=ugpC BulkMat.gff > /home/ssalley/VANDA/BULKMAT/ugpC_BULKMAT.txt
+
+
+FOR EACH gene, pull the contig numbers (k99_...)
+awk '{print $1}' phoB_BULKMAT_grep.txt > phoB_BULKMAT_contignum.txt
